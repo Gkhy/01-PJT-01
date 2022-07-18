@@ -1,6 +1,6 @@
 import json
 from pprint import pprint
-with open('권건희/data/movie.json', 'r',encoding='utf-8') as f:
+with open('data/movie.json', 'r',encoding='utf-8') as f:
 
     json_data = json.load(f)
     list=['id', 'title','vote_average', 'overview', 'genre_ids']
@@ -14,7 +14,7 @@ with open('권건희/data/movie.json', 'r',encoding='utf-8') as f:
 
 # 아래의 코드는 수정하지 않습니다.
 if __name__ == '__main__':
-    movie_json = open('권건희/data/movie.json', encoding='UTF8')
+    movie_json = open('data/movie.json', encoding='UTF8')
     movie = json.load(movie_json)
     
     pprint(movie_info(movie))
